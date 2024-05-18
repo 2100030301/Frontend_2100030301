@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Data Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="table-container">
+    <input type="text" id="search" placeholder="Search...">
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th data-column="name" data-order="asc">Name</th>
+          <th data-column="address" data-order="asc">Address</th>
+          <th data-column="phone" data-order="asc">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data rows will be appended here -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button id="prev-page">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-page">Next</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
